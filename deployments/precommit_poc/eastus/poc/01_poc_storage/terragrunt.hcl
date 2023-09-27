@@ -14,13 +14,13 @@ dependency "resource_group" {
 }
 locals {
   # Expose the base source path
-  base_source             = "${dirname(find_in_parent_folders())}/..//modules"
-  subscription_vars       = read_terragrunt_config(find_in_parent_folders("subscription.hcl"))
-  region_vars             = read_terragrunt_config(find_in_parent_folders("region.hcl"))
-  environment_vars        = read_terragrunt_config(find_in_parent_folders("env.hcl"))
-  location                = local.region_vars.locals.location
-  project_name            = local.environment_vars.locals.project_name
-  environment             = local.environment_vars.locals.environment
+  base_source       = "${dirname(find_in_parent_folders())}/..//modules"
+  subscription_vars = read_terragrunt_config(find_in_parent_folders("subscription.hcl"))
+  region_vars       = read_terragrunt_config(find_in_parent_folders("region.hcl"))
+  environment_vars  = read_terragrunt_config(find_in_parent_folders("env.hcl"))
+  location          = local.region_vars.locals.location
+  project_name      = local.environment_vars.locals.project_name
+  environment       = local.environment_vars.locals.environment
 }
 
 terraform {

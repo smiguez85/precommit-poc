@@ -11,14 +11,14 @@ variable "resource_group_name" {
   description = "The name of the resource group"
 }
 variable "public_network_access_enabled" {
-  type = bool
+  type        = bool
   description = "Will the storage account have public access?"
 }
 variable "environment" {
-  type = string
+  type        = string
   description = "Assign the environment name to its corresponding tag"
 }
 variable "project_name" {
-  type = string
+  type        = string
   description = "Assign the project name to its corresponding tag"
 }

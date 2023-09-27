@@ -27,7 +27,7 @@ terraform {
 }
 
 inputs = {
-  location                 = local.location
+  location            = local.location
   resource_group_name = "rg-precommit-poc"
   # TAGS
   project_name = local.project_name

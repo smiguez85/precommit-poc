@@ -8,6 +8,7 @@ resource "azurerm_storage_account" "storage" {
   #checkov:skip=CKV2_AZURE_18:Using Azure key for encryption
   #checkov:skip=CKV_AZURE_33:Logging is not needed
   #checkov:skip=CKV2_AZURE_33
+  #checkov:skip=CKV_AZURE_206:Replication is not needed
   name                            = var.name
   resource_group_name             = var.resource_group_name
   location                        = var.location

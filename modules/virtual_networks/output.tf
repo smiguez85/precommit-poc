@@ -8,13 +8,13 @@ output "virtual_network_name" {
 }
 output "address_space" {
   description = "List of CIDR address spaces created"
-  value = azurerm_virtual_network.poc_vnet.address_space
+  value       = azurerm_virtual_network.poc_vnet.address_space
 }
 output "subnet" {
   description = "Set of subnets created"
-  value = azurerm_virtual_network.poc_vnet.subnet
+  value       = azurerm_virtual_network.poc_vnet.subnet
 }
 output "subnet_id" {
   description = "List of subnets Id created"
-  value = azurerm_virtual_network.poc_vnet.subnet[*].id
+  value       = azurerm_virtual_network.poc_vnet.subnet[*].id
 }

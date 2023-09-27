@@ -7,10 +7,10 @@ variable "resource_group_name" {
   description = "The name of the resource group"
 }
 variable "environment" {
-  type = string
+  type        = string
   description = "Assign the environment name to its corresponding tag"
 }
 variable "project_name" {
-  type = string
+  type        = string
   description = "Assign the project name to its corresponding tag"
 }
